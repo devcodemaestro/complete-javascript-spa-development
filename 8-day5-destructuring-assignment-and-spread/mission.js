@@ -7,6 +7,18 @@ console.log(
   })
 );
 
+const products = [
+  { id: 1, product: "모니터", price: 300000, stock: 12 },
+  { id: 2, product: "키보드", price: 50000, stock: 5 },
+  { id: 3, namproduct: "노트북", price: 1200000, stock: 3 },
+];
+
+const [, secondProduct] = products;
+
+const { product, stock } = secondProduct;
+
+console.log(`${product}의 재고는 ${stock}개입니다.`);
+
 const arr1 = [1, 2];
 const arr2 = [3, 4];
 
